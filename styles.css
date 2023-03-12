@@ -1,0 +1,329 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.hamburgerinfo
+{
+    background-color: #f4f4f4;
+    display:none;
+}
+.hamburgerdisplay
+{
+    display: flex;
+    flex-direction: column;
+}
+.Mic{
+    padding-top:17px;
+    padding-left:17px;
+    padding-bottom:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 0.1px dotted rgba(104, 103, 102, 0.354);
+    cursor:pointer;
+}
+.nav-bar {
+    display: flex;
+    height: 50px;
+    /* background-color: antiquewhite; */
+}
+.pa{
+    font-size:16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.microsoft img {
+    height: 8px;
+    width: 8px;
+    transform: rotate(270deg);
+}
+
+.searchicon,
+.searchicon2 {
+    height: 20px;
+    width: 20px;
+    padding-left: 24px;
+    margin-top: 13px;
+}
+
+.hamburger {
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+.line {
+    width: 19px;
+    height: 1.7px;
+    background-color: black;
+    margin-top: 3px;
+}
+.more , .join{
+    height: 43px;
+    font-size: 16px;
+    width: 104px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8%;
+
+}
+.new{
+    color:#950C17;
+    height: 33px;
+    width:60px;
+    font-size:16px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    background-color: white;
+    border: 0px;
+}
+.surface,.pc{
+    font-weight:500;
+    font-size:29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo-img {
+    width: 102px;
+    height: 23px;
+}
+.dis{
+    display:flex;
+    justify-content: center;
+}
+.rightarrow
+{
+    height: 32px;
+    width: 28px;
+    margin-top: 9px;
+}
+.dot-2{  
+    height: 14px;
+    width: 15px;
+    margin-top: 16px;
+    padding-right: 21px;
+}
+.dot-1{
+    height: 20px;
+    width:20px;
+    margin:14px;
+}
+.leftarrow{
+    height: 45px;
+    width: 42px;
+    margin-top:2px;
+}
+.leftarrow:hover {
+    cursor: pointer;
+    padding-right:8px;
+    transition-duration: 0.3s;
+}
+.rightarrow:hover {
+    cursor: pointer;
+    padding-left:8px;
+    transition-duration: 0.3s;
+}
+.cart-img {
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    margin-right: 25px;
+}
+
+.user-icon {
+    width: 28px;
+    height: 28px;
+    margin-top: 12px;
+    padding-right: 12px;
+}
+
+.micro {
+    display: inline;
+}
+.microsoft3  , .surf , .Xbox , .windows11{
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.microsoft3-img , .surf-img , .Xbox-img , .windows11-img{
+    height: 40px;
+    width:40px;
+    align-self: center;
+    margin-top:25px;
+}
+.microsoft3-text,.surf-text,.Xbox-text,.windows11-text{
+    font-size:16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-weight:600;
+    margin-top: 12px;
+}
+@media screen and (max-width:860px) {
+    .extra-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -100px;
+    }
+
+    .searchicon2 {
+        display: none;
+    }
+
+    .microsoft {
+        display: none;
+    }
+    .logo {
+        margin: auto;
+    }
+    .main{
+        position: relative;
+        overflow:hidden;
+    }
+    .text,.text-2{
+        padding:30px;
+        width:80%;
+    }
+    .sales-img,.sales-2-img-small{
+        width:100%;
+    }
+    .sales-2{
+        position: absolute;
+        top:-10px;
+    }
+    .sales-2-img-small{
+        width:100vw;
+        height:363px;
+    }
+    .sales-2-img-large
+    {
+        display:none;
+    }
+    .img-cross
+    {
+        height:19px;
+        width:19px;
+        margin-top:12px;
+        position: absolute;
+        left:15px;
+        display:none;
+    }
+    .img-cross-display{
+        display:inline;
+    }
+    .main-display{
+        display:none;
+    }
+}
+@media screen and (min-width:860px) {
+    .logo {
+        margin-left: 60px;
+        margin-top: 12px;
+    }
+    .hamburgerdisplay{
+        display:none;
+    }
+    .sales-2-img-small{
+        display:none;
+    }
+    .logo-img {
+        display: inline-block;
+    }
+    .hamburger,
+    .searchicon {
+        display: none;
+    }
+
+    .extra-info {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        white-space: nowrap;
+        color: #262626;
+        font-size: 13px;
+    }
+    .info {
+        margin-left: 2rem;
+    }
+
+    .user-icon {
+        position: absolute;
+        right: 57px;
+    }
+
+    .cart-img {
+        position: absolute;
+        right: 87px;
+    }
+
+    .searchicon2 {
+        position: absolute;
+        right: 151px;
+        top: 2px;
+    }
+    .microsoft {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        white-space: nowrap;
+        color: #262626;
+        position: absolute;
+        right: 13rem;
+        top: 16px;
+        font-size: 13px;
+    }
+
+    .sales,.sales-2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .text-2 {
+        position: absolute;
+        top:205px;
+        left:100px;
+        width:27%;
+    }
+    .text{
+        position:absolute;
+        top:150px;
+        left:100px;
+        width:27%;
+    }
+    .sales-img,.sales-2-img-large{
+        width: 60vw;
+        height: 500px;
+    }
+
+    .sales,.sales-2 {
+        background-color: #f4f4f4;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .microsoft3,.surf,.Xbox,.windows11{
+        padding-right:3%;
+    }
+    .main
+    {
+        position: relative;
+        overflow: hidden;
+    }
+    .sales-2{
+        position:absolute;
+        top:-100px;
+        width:100%;
+    }
+    .sales-2-img-large
+    {
+        width:100vw;
+        height:600px;
+    }
+    .img-cross
+    {
+        display:none;
+    }
+}
